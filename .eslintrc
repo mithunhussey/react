@@ -1,0 +1,20 @@
+{
+  parser: "babel-eslint",
+  extends: "airbnb",
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "import"
+  ],
+  "rules": {
+    "linebreak-style": 0,
+    "class-methods-use-this": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+  },
+  "globals": {
+    "window": true,
+    "document": true,
+    "Stripe": true,
+    "localStorage": true,
+  }
+}

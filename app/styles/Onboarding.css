@@ -1,0 +1,641 @@
+/*---------- Include External fonts --------------*/
+
+@font-face{
+  src:url("fonts/Montserrat-Bold.otf")  format("truetype");
+  font-family:montserrat-bold;
+}
+
+@font-face{
+  src:url("fonts/Montserrat-Light.otf")  format("truetype");
+  font-family:montserrat-light;
+}
+
+@font-face{
+  src:url("fonts/Montserrat-Regular.otf")  format("truetype");
+  font-family:montserrat;
+}
+
+@font-face{
+  src:url("fonts/OpenSans-Bold.ttf")  format("truetype");
+  font-family:opensans-bold;
+}
+
+@font-face{
+  src:url("fonts/OpenSans-Regular.ttf")  format("truetype");
+  font-family:opensans;
+}
+
+@font-face{
+  src:url("fonts/OpenSans-Light.ttf")  format("truetype");
+  font-family:opensans-light;
+}
+
+/*---------- common classes --------------*/
+
+ul,ol,li{
+  list-style-type:none;
+
+}
+
+ul{
+  padding-left:0;
+}
+
+a{
+  cursor:pointer;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: montserrat;
+}
+
+p{
+  font-size: 14px;
+}
+
+.txt20{
+  font-size:20px;
+}
+.align-center{
+  text-align:center;
+}
+
+html, body {
+  background: #eee none repeat scroll 0 0;
+  font-family: opensans;
+  font-size: 14px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+.container{
+  background: #fff none repeat scroll 0 0;
+  min-height: 100%;
+  position: relative;
+  width:1100px;
+  margin:0 auto;
+  padding:0 0 8%;
+}
+
+footer {
+  bottom: 0;
+  position: absolute;
+  width: 98.4%;
+  padding:10px;
+}
+
+/*-----  sign up page strats here  -----*/
+.onboarding-section{ margin: 20px; }
+.logo-section{
+  text-align:right;
+  border-bottom:2px solid #F37828;
+}
+
+.ant-form-item-label > label{ font-size: 14px; }
+.ant-radio-button-wrapper-checked{ 
+  color: #F37828 !important; 
+  border-color: #F37828 !important;
+  background-color: #eee !important;
+  box-shadow: none !important;
+}
+
+.ant-radio-button-wrapper:hover, .ant-radio-button-wrapper-focused{
+  color: #F37828 !important;
+}
+
+.ant-input-number .ant-input-number-handler-wrap{ opacity: 1; }
+
+.ant-input-number:hover{ border-color: #F37828 !important; }
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.logo-section img{
+  margin-bottom: -6px;
+  padding: 20px 56px 0px;
+}
+
+.locale-dropdown{
+  text-align: right;
+  margin:10px 10px 0 0;
+}
+.sign-up-button{
+  padding: 6px 20px;
+}
+
+/********** SignUp Email *********/
+
+.signup-email{
+  width: 100%;
+}
+
+.center-text{
+  text-align: center;
+}
+
+.sign-up-div{
+  width: 60%;
+  height: 350px; 
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: table;
+  margin: 0 auto;
+  padding:10px;    
+}
+.inner-div{
+  background: none repeat scroll 0 0 #ddd;
+  padding: 160px 0;
+}
+.signup-email .ant-form-inline .ant-form-item-with-help{ margin-bottom: 0px !important; }
+.signup-email-title{
+  text-align: center;
+  width: 100%;
+}
+
+.sign-email-col{
+  text-align: center;
+}
+
+.form-item-email{
+  margin-right: 0px !important;
+}
+
+.sub-recom-title{
+  font-size: 26px;
+  font-weight: bold;
+  margin: 20px 0px;
+  width: 100%;
+}
+
+.sub-recom-subtitle{
+  font-size: 20px;
+  margin: 5px 0px;
+}
+
+.form-subscriptionFab{ width: 100%; }
+.your-plan-title{
+  color: #ff7c21;
+  margin: 20px 0 0;
+  padding: 10px 5px;
+  border-radius: 5px;
+  border-bottom: 1px solid #a8b8c7;
+}
+
+.rec-plan-rate {
+  padding: 20px 0;
+}
+
+.your-plan-title h4{
+  font-size: 22px;
+}
+
+.sub-left-plan-name{ 
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+.sub-left-plan-value{ 
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+}
+
+.plan-detail-subscr{ padding-top: 20px; }
+.plan-detail-subscr .ant-form-item{ width: 90%; margin-left: 5%; }
+.plan-detail-subscr label{ float: left; font-weight: bold; }
+.subsc-button{ margin: 20px 0 0; }
+.plan-detail-subscr .ant-input[disabled]{ color: #666; font-weight: 600; }
+
+.rs-description .ant-form-item{
+  margin-bottom: 5px;
+  width: 80%;
+}
+
+.sign-partner-nbsite .ant-input-number{
+  float: left;
+}
+
+.left-form-pay {
+  margin-bottom: 10px;
+}
+
+.sub-recom-fab-left .ant-card-head{
+  background: #FCC773;
+  color: #403f3e;
+}
+
+.card-holder{
+  margin:25px;
+}
+
+.sub-recom-fab-left .ant-card-head-title{
+  font-size: 18px;
+}
+
+.card-holder ul,.card-holder ol,.card-holder li{
+  list-style-type: disc;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.recommended-plan-right .girl-image img{ width: 100%; }
+
+.gov-subscr-title{
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.gov-subscr-card .ant-card{
+  margin: 10px;
+}
+
+.gov-subscr-card .ant-card-head{
+  border-bottom: 1px solid #e9e9e9;
+  line-height: 48px;
+  min-height: 60px;
+  padding: 0 75px;
+}
+
+.gov-subscr-card .ant-card-extra {
+  left: 24px;
+  position: absolute;
+  top: 14px;
+}
+
+.gov-subscr-card .ant-card-head{
+  line-height: 30px;
+}
+
+.gov-subscr-card .ant-card-head{
+  line-height: 30px;
+}
+
+.confirm-page{
+  margin: 0 auto;
+  padding: 4%;
+}
+
+.success-message{
+  color: #50b53b;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.whats-next{
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.create-first-site{
+  padding: 10px 60px;
+  font-size: 16px;
+}
+
+.continue-dashboard{
+  font-size: 16px;
+  margin: 10px;
+}
+
+.signup-alert{
+  margin: 0 auto;
+  text-align: center;
+  width: 68%;
+  color: forestgreen;
+}
+
+.agree-text{
+  margin-top: 2px;
+  width: 86%;
+  float: right;
+  font-size: 12px;
+}
+
+.call-me{
+  text-align: center;
+  margin: 30px;
+}
+
+.mob-call-me{
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.step-1-form{
+  padding: 30px;
+}
+
+.steps-action{
+  float: right;
+  padding: -12% 20%;
+}
+
+.partner-signup-title{
+  font-size: 24px;
+  margin: 0 20px;
+}
+.partner-signup-title{
+  font-weight: 100;
+  font-family: montserrat-light;
+}
+.partner-signup-title b{ font-weight: 600; }
+.partner-signup-np-title{
+  font-size: 14px;
+  background-color: green;
+  color: #fff;
+  margin: 10px;
+  padding: 5px 10px;
+}
+
+.partner-form-instr{
+  font-size: 16px;
+  margin: 0 20px;
+}
+
+.girl-image-col{
+  margin-top: 45px;
+}
+
+.sign-up-business-form{
+  width: 100%;
+  margin: 0 20px;
+}
+
+.partner-button-left{ margin-top: 10px; }
+.ant-form-item-required::before {
+  float: right;
+}
+
+.girl-image-signpartner{ width: 250px; }
+.girl-image-signpartner img{ width: 100%; }
+
+.sign-up-business-form .ant-form-item{
+  margin-bottom: 10px;
+}
+
+.sign-up-business-form .ant-form-item .ant-form-item-label{
+  font-weight: bold;
+}
+
+.sign-up-business-form .ant-form-item .ant-radio-button-wrapper{
+  border-left: 1px solid #d9d9d9;
+  margin: 5px;
+  border-radius: 4px;
+}
+
+.sign-up-business-form .form-signup-others-show{
+  display: flex;
+  margin-left: 5px;
+}
+
+.sign-up-business-form .form-signup-others-hide{
+  display: none;
+}
+
+
+.sign-up-business-form .form-signup-others{
+  margin-left: 50px;
+}
+
+.sign-up-select{
+  width: 30%;
+  display: inline-block;
+  margin: 5px;
+}
+
+.sign-up-partner-timage{
+  width: 100%;
+  display: inline-block;
+}
+
+.signup-partner-girl{
+  width: 23%;
+  display: inline-block;
+  top: 30%;
+  position: absolute;
+  right: 0%;
+}
+
+.cong-image img{ float: right; }
+.loader-signup{ 
+  width: 20px;
+  margin-left: 10px;
+  padding: 0px 2px; 
+}
+
+.ant-form-item-control{ line-height: 28px; }
+
+blockquote {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 40px;
+  -webkit-margin-end: 40px;
+}
+
+blockquote p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.example-obtuse {
+  position: relative;
+  padding: 8px 8px;
+  margin: 1em 0 3em;
+  border: 3px solid #fad733;
+  text-align: center;
+  color: #333;
+  background: #fff;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px
+}
+
+.example-obtuse:before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  bottom: -40px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border: 10px solid #fad733;
+  background: #fff;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  display: block;
+}
+
+.example-obtuse:after {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  bottom: -60px;
+  right: 2px;
+  width: 25px;
+  height: 25px;
+  border: 10px solid #fad733;
+  background: #fff;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  display: block;
+}
+
+.signup-partner-girl .girl-image{ width: 250px; }
+.signup-partner-girl .girl-image img{ width: 100%; }
+
+.ant-switch-checked{
+  border-color: #F37828 !important;
+  background-color: #F37828 !important;
+}
+
+/*Mobile Start*/
+
+@media screen and (min-device-width: 320px) and (max-device-width : 767px) {
+
+  .container{ width:100%; padding: 0 0 70px; }
+  .logo-section{ text-align: center; }
+  .ant-message{ display: none; }
+  .sign-up-div{ width: 90%; margin-top: 10px; height: auto; }
+  .signup-email-title{ font-size: 12px; }
+  .inner-div{ padding: 100px 0; }
+  .ant-form-inline .ant-form-item-with-help{ margin-bottom: 5px; }
+  .form-item-email div{ width: 100%; }
+  .form-item-email{ width: 100%; padding: 10px; }
+  .alert-sign-pass .ant-col-8{ width: 100%;margin: 10px; }
+  .signup-email-button{ margin-right: 0px !important; }
+  form.signup-email .ant-form-explain{ position: inherit; }
+  .sign-up-np-form .ant-col-8{ width: 100%; }
+  .sign-up-np-form .agree-text { width: 82%;text-align: center;font-size: 12px;line-height: 16px; }
+  .cong-image{ width: 100%; padding: 0 10px; }
+  .cong-image img{ margin: 0 20px 35px;width: 80%; }
+  .example-obtuse:after{ bottom: -70px; right: 130px; }
+  .example-obtuse:before{ bottom: -40px; right: 140px; }
+  .girl-image{ margin: 0 10px; }
+  .sign-up-partner-timage .ant-col-18{ width: 100%; }
+  .signup-partner-girl{ width: 100%; display:flex;position: inherit; }
+  .sp-partner-form .ant-col-18{ width: 100%; }
+  .sp-partner-form .ant-col-6{ display: none; }
+  .sp-partner-form .ant-col-push-4{ left: 0; }
+  .sign-up-business-form{ margin: 0 auto; }
+  .sign-up-business-form .ant-col-16,.sign-up-business-form .ant-col-12{ width: 100%; text-align:center; }
+  .sign-up-business-form .ant-col-14{ width: 90%; text-align:center; }
+  .sign-partner-nbsite label{ display: inherit; }
+  .sign-up-business-form .ant-col-pull-1{ right: 0; }
+  .sign-up-business-form .ant-col-pull-2{ right: 0; }
+  .sign-up-business-form .ant-col-push-5{ left: 0;text-align: center;width: 100%; }
+  .sign-up-business-form .ant-row-flex-start{ justify-content: center; }
+  .sign-partner-nbsite .ant-input-number{ float: none; }
+  .sign-partner-nbsite .ant-form-explain{ margin: 10px; }
+  .sign-up-business-form .ant-col-8{ width: 100%; text-align:center; }
+  .sign-up-business-form .ant-col-10{ width: 75%; text-align:center; }
+  .recommended-plan-left { text-align: center;width: 100% }
+  .plan-detail-subscr label{ float: none; }
+  .sub-recom-subtitle{ font-size: 16px; }
+  .your-plan-title h4{ font-size: 18px; }
+  .form-subscriptionFab .ant-col-10{ width: 100%; margin-bottom: 20px; }
+  .form-subscriptionFab .ant-col-14{ width: 100%; }
+  .rs-description .ant-form-item{ width: 100%; }
+  .form-subscriptionFab .ant-form-item-label{ white-space: normal;text-align: center; }
+  .cardHolderFab .ant-col-10{ width: 100%; }
+  .ant-card-body p{ text-align: left; }
+  .recommended-plan-right{ display: none; }
+  .plan-detail-subscr .m-view { width: 100% !important; }
+  .example-obtuse:before,.example-obtuse:after{ display: none; }
+  ..partner-signup-title{ line-height: 30px; margin: 0; }
+  .sp-partner-form{ text-align: center; }
+  .sp-partner-form .ant-col-22{ width: 100%; }
+  .plan-detail-subscr .ant-input, .plan-detail-subscr .ant-input-number-input{ text-align: center; }
+  .confirm-page .ant-col-12{ width: 100%; }
+  .confirm-page .success-message{ font-size: 16px; }
+  .whats-next{ font-size: 14px; }
+}
+
+@media screen and (min-device-width: 360px) and (max-device-width : 640px) {
+
+  .container{ width:100%; padding: 0 0 100px; }
+  .sign-up-div{ width: 90%; margin-top: 10px; height: auto; }
+  .form-item-email{ width: 80%; }
+  .signup-email-title{ font-size: 14px; }
+  .ant-form-inline .ant-form-item-with-help{ margin-bottom: 0px; }
+  .signup-email-button{ margin-right: 0px !important; }
+  form.signup-email .ant-form-explain{ position: inherit; }
+  .sign-up-np-form .ant-col-8{ width: 100%; }
+  .sign-up-np-form .agree-text{ width: 85%;line-height: 18px; }
+  .cong-image{ width: 100%; }
+  .cong-image img{ margin: 0 20px 35px;width: 80%; }
+  .girl-image{ margin: 0 10px; }
+  .sign-up-partner-timage .ant-col-18{ width: 100%; }
+  .signup-partner-girl{ width: 100%; display:flex;position: inherit; }
+  .sp-partner-form .ant-col-18{ width: 100%; }
+  .sp-partner-form .ant-col-6{ display: none; }
+  .sp-partner-form .ant-col-push-4{ left: 0; }
+  .sign-up-business-form .ant-col-14{ width: 90%; text-align:center; }
+  .sign-up-business-form .ant-col-pull-2{ right: 0; }
+  .sign-up-business-form .ant-col-push-5{ left: 0; }
+  .sign-up-business-form .ant-col-8{ width: 100%; text-align:center; }
+  .sign-up-business-form .ant-col-10{ width: 75%; text-align:center; }
+  .recommended-plan-left { text-align: center;width: 100% }
+  .sub-recom-subtitle{ font-size: 16px; }
+  .your-plan-title h4{ font-size: 18px; }
+  .form-subscriptionFab .ant-col-10{ width: 100%; margin-bottom: 20px; }
+  .form-subscriptionFab .ant-col-14{ width: 100%; }
+  .rs-description .ant-form-item{ width: 100%; }
+  .form-subscriptionFab .ant-form-item-label{ white-space: normal;text-align: center; }
+  .cardHolderFab .ant-col-10{ width: 100%; }
+  .ant-card-body p{ text-align: left; }
+  .plan-detail-subscr label{ float: none; }
+	.plan-detail-subscr .ant-input, .plan-detail-subscr .ant-input-number-input{ text-align: center; }
+
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width : 1400px) {
+  p{ font-size: 16px; }
+  footer{ font-size: 18px; }
+  .sub-left-plan-value{ font-size: 16px; }
+  .sub-left-plan-name { font-size: 20px; }
+  .ant-form-item-label > label{ font-size: 16px; }
+  .whats-next, .create-first-site, .continue-dashboard{ font-size: 20px; }
+  .plan-detail-subscr .ant-input[disabled], .plan-detail-subscr .ant-input-number-input{ font-size: 14px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+dependencies:
+  pre:
+    - npm install
+
+test:
+  override:
+    - ./node_modules/eslint/bin/eslint.js app
+
+notify:
+  webhooks:
+    - url: https://devchat.uwai.com/hooks/pm4J3SwNaBMjWTduo/AnsmnxCZykCB3JMqFhTQRttYCqsrYydZYznXE6cqtTcZpTZu
